@@ -1,6 +1,6 @@
 <template>
 	<view style="height: 400rpx;" :style="'margin-top:'+statusBarHeight+'px'">
-		<video src="http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8" autoplay controls="false" class="flex-1"></video>
+		<video src="http://ivi.bupt.edu.cn/hls/cctv2hd.m3u8" autoplay controls="false" class="flex-1"></video>
 	</view>
 	<view class="bg-light" style="height: 1000rpx; z-index:20;">
 		<button @tap="goback" class="bg-main mt-3">返回</button>
