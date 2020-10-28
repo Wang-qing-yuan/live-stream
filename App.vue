@@ -17,9 +17,10 @@
 </script>
 
 <style>
-	/*每个页面公共css */
-	/* 引入官方样式库 */
-	@import url('/common/common.css');
-	@import url('/common/free.css');
-	@import url('/common/icon.css');
+/*引入公共样式库 */
+@import url('./common/common.css');
+/*引入free样式库 */
+@import url('./common/free.css');
+/*引入图标库 */
+@import url('./common/icon.css');
 </style>
