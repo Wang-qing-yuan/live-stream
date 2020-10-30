@@ -60,7 +60,7 @@
 			"text": "发现"
 		}, {
 			"iconPath": "static/tabbar/my.png",
-			"selectedIconPath": "static/tabbar/my-selected.png",
+			"selectedIconPath": "./static/tabbar/my-selected.png",
 			"pagePath": "pages/my/my",
 			"text": "我的"
 		}]
