@@ -1115,320 +1115,325 @@ var render = function() {
       }
     },
     [
-      _c(
-        "view",
-        { staticClass: ["flex-1"] },
-        [
-          _c("u-video", {
-            staticClass: ["flex-1", "mt-5"],
-            attrs: {
-              src: "http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8",
-              autoplay: true,
-              controls: "false"
-            }
-          }),
-          _c(
-            "view",
-            {
-              staticStyle: { position: "fixed", left: "0", right: "0" },
-              style: "top:" + _vm.statusBarHeight + "px"
-            },
-            [
-              _c(
-                "view",
-                {
-                  staticClass: [
-                    "px-2",
-                    "flex",
-                    "justify-center",
-                    "align-center"
-                  ],
-                  staticStyle: { height: "80rpx" }
-                },
-                [
-                  _c(
-                    "view",
-                    {
-                      staticClass: ["flex", "rounded-circle"],
-                      staticStyle: {
-                        width: "325rpx",
-                        backgroundColor: "rgba(0,0,0,0.4)"
-                      }
-                    },
-                    [
-                      _c(
-                        "view",
-                        { staticClass: ["p"] },
-                        [
-                          _c("u-image", {
-                            staticClass: ["rounded-circle"],
-                            staticStyle: { width: "70rpx", height: "70rpx" },
-                            attrs: { src: "../../static/me.jpg" }
-                          })
-                        ],
-                        1
-                      ),
-                      _c(
-                        "view",
-                        {
-                          staticClass: [
-                            "flex-1",
-                            "flex",
-                            "flex-column",
-                            "justify-center"
-                          ]
-                        },
-                        [
-                          _c(
-                            "u-text",
-                            { staticClass: ["text-white", "font"] },
-                            [_vm._v("主播昵称")]
-                          ),
-                          _c(
-                            "u-text",
-                            { staticClass: ["text-white", "font-sm"] },
-                            [_vm._v("100")]
-                          )
-                        ]
-                      ),
-                      _c("view", { staticClass: ["p"] }, [
-                        _c(
-                          "view",
-                          {
-                            staticClass: [
-                              "rounded-circle",
-                              "flex",
-                              "align-center",
-                              "justify-center",
-                              "bg-danger"
-                            ],
-                            staticStyle: { width: "70rpx", height: "70rpx" }
-                          },
-                          [
-                            _c("u-text", { staticClass: ["text-white"] }, [
-                              _vm._v("+")
-                            ])
-                          ]
-                        )
-                      ])
-                    ]
-                  ),
-                  _c(
-                    "view",
-                    {
-                      staticClass: ["flex", "rounded-circle"],
-                      staticStyle: {
-                        width: "325rpx",
-                        backgroundColor: "rgba(0,0,0,0.4)"
-                      }
-                    },
-                    [
-                      _c(
-                        "scroll-view",
-                        {
-                          staticClass: ["flex-1", "flex"],
-                          attrs: { scrollX: "true" }
-                        },
-                        _vm._l(20, function(i) {
-                          return _c(
-                            "view",
-                            { key: i, staticClass: ["p"] },
-                            [
-                              _c("u-image", {
-                                staticStyle: {
-                                  width: "70rpx",
-                                  height: "70rpx"
-                                },
-                                attrs: { src: "../../static/1.png" }
-                              })
-                            ],
-                            1
-                          )
-                        }),
-                        0
-                      ),
-                      _c("view", { staticClass: ["p"] }, [
-                        _c(
-                          "view",
-                          {
-                            staticClass: [
-                              "rounded-circle",
-                              "flex",
-                              "align-center",
-                              "justify-center",
-                              "bg-danger"
-                            ],
-                            staticStyle: { width: "70rpx", height: "70rpx" }
-                          },
-                          [
-                            _c(
-                              "u-text",
-                              { staticClass: ["text-white", "font-sm"] },
-                              [_vm._v("1000")]
-                            )
-                          ]
-                        )
-                      ])
-                    ],
-                    1
-                  )
-                ]
-              ),
-              _c(
-                "view",
-                {
-                  staticClass: ["px-2", "my-2"],
-                  staticStyle: { height: "80rpx" }
-                },
-                [
-                  _c(
-                    "view",
-                    {
-                      staticClass: ["flex", "rounded-circle", "align-center"],
-                      staticStyle: {
-                        width: "325rpx",
-                        backgroundColor: "rgba(0,0,0,0.4)"
-                      }
-                    },
-                    [
-                      _c("view", { staticClass: ["p"] }, [
-                        _c("u-text", { staticClass: ["text-warning"] }, [
-                          _vm._v("金币区")
-                        ])
-                      ]),
-                      _c(
-                        "view",
-                        {
-                          staticClass: [
-                            "flex-1",
-                            "flex",
-                            "flex-column",
-                            "justify-center"
-                          ]
-                        },
-                        [
-                          _c(
-                            "u-text",
-                            { staticClass: ["text-white", "font"] },
-                            [_vm._v("100")]
-                          )
-                        ]
-                      )
-                    ]
-                  )
-                ]
-              ),
-              _c("f-gift", { ref: "gift" })
-            ],
-            1
-          ),
-          _c("f-danmu", { ref: "danmu" }),
-          _c("uni-popup", { ref: "input", attrs: { type: "bottom" } }, [
+      _c("view", [
+        _c(
+          "view",
+          { staticClass: ["flex-1"] },
+          [
+            _c("u-video", {
+              staticClass: ["flex-1", "mt-5"],
+              attrs: {
+                src: "http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8",
+                autoplay: true,
+                controls: "false"
+              }
+            }),
             _c(
               "view",
               {
-                staticClass: ["bg-white", "flex", "align-center", "px-3"],
-                staticStyle: { height: "120rpx" }
+                staticStyle: { position: "fixed", left: "0", right: "0" },
+                style: "top:" + _vm.statusBarHeight + "px"
               },
               [
-                _c("u-input", {
-                  staticClass: [
-                    "border",
-                    "rounded",
-                    "flex-1",
-                    "px-3",
-                    "font-md"
-                  ],
-                  staticStyle: { height: "80rpx" },
-                  attrs: {
-                    type: "text",
-                    placeholder: "说点什么吧...",
-                    value: _vm.content
-                  },
-                  on: {
-                    input: function($event) {
-                      _vm.content = $event.detail.value
-                    }
-                  }
-                }),
                 _c(
                   "view",
                   {
                     staticClass: [
-                      "flex",
-                      "align-center",
-                      "justify-center",
-                      "py-2",
                       "px-2",
-                      "ml-3",
-                      "rounded"
+                      "flex",
+                      "justify-center",
+                      "align-center"
                     ],
-                    class: _vm.content === "" ? "bg-main-disabled" : "bg-main",
-                    on: { click: _vm.sumbit }
+                    staticStyle: { height: "80rpx" }
                   },
                   [
-                    _c("u-text", { staticClass: ["font", "text-white"] }, [
-                      _vm._v("发送")
-                    ])
+                    _c(
+                      "view",
+                      {
+                        staticClass: ["flex", "rounded-circle"],
+                        staticStyle: {
+                          width: "325rpx",
+                          backgroundColor: "rgba(0,0,0,0.4)"
+                        }
+                      },
+                      [
+                        _c(
+                          "view",
+                          { staticClass: ["p"] },
+                          [
+                            _c("u-image", {
+                              staticClass: ["rounded-circle"],
+                              staticStyle: { width: "70rpx", height: "70rpx" },
+                              attrs: { src: "../../static/me.jpg" }
+                            })
+                          ],
+                          1
+                        ),
+                        _c(
+                          "view",
+                          {
+                            staticClass: [
+                              "flex-1",
+                              "flex",
+                              "flex-column",
+                              "justify-center"
+                            ]
+                          },
+                          [
+                            _c(
+                              "u-text",
+                              { staticClass: ["text-white", "font"] },
+                              [_vm._v("主播昵称")]
+                            ),
+                            _c(
+                              "u-text",
+                              { staticClass: ["text-white", "font-sm"] },
+                              [_vm._v("100")]
+                            )
+                          ]
+                        ),
+                        _c("view", { staticClass: ["p"] }, [
+                          _c(
+                            "view",
+                            {
+                              staticClass: [
+                                "rounded-circle",
+                                "flex",
+                                "align-center",
+                                "justify-center",
+                                "bg-danger"
+                              ],
+                              staticStyle: { width: "70rpx", height: "70rpx" }
+                            },
+                            [
+                              _c("u-text", { staticClass: ["text-white"] }, [
+                                _vm._v("+")
+                              ])
+                            ]
+                          )
+                        ])
+                      ]
+                    ),
+                    _c(
+                      "view",
+                      {
+                        staticClass: ["flex", "rounded-circle"],
+                        staticStyle: {
+                          width: "325rpx",
+                          backgroundColor: "rgba(0,0,0,0.4)"
+                        }
+                      },
+                      [
+                        _c(
+                          "scroll-view",
+                          {
+                            staticClass: ["flex-1", "flex"],
+                            attrs: { scrollX: "true" }
+                          },
+                          _vm._l(20, function(i) {
+                            return _c(
+                              "view",
+                              { key: i, staticClass: ["p"] },
+                              [
+                                _c("u-image", {
+                                  staticStyle: {
+                                    width: "70rpx",
+                                    height: "70rpx"
+                                  },
+                                  attrs: { src: "../../static/1.png" }
+                                })
+                              ],
+                              1
+                            )
+                          }),
+                          0
+                        ),
+                        _c("view", { staticClass: ["p"] }, [
+                          _c(
+                            "view",
+                            {
+                              staticClass: [
+                                "rounded-circle",
+                                "flex",
+                                "align-center",
+                                "justify-center",
+                                "bg-danger"
+                              ],
+                              staticStyle: { width: "70rpx", height: "70rpx" }
+                            },
+                            [
+                              _c(
+                                "u-text",
+                                { staticClass: ["text-white", "font-sm"] },
+                                [_vm._v("1000")]
+                              )
+                            ]
+                          )
+                        ])
+                      ],
+                      1
+                    )
                   ]
-                )
+                ),
+                _c(
+                  "view",
+                  {
+                    staticClass: ["px-2", "my-2"],
+                    staticStyle: { height: "80rpx" }
+                  },
+                  [
+                    _c(
+                      "view",
+                      {
+                        staticClass: ["flex", "rounded-circle", "align-center"],
+                        staticStyle: {
+                          width: "325rpx",
+                          backgroundColor: "rgba(0,0,0,0.4)"
+                        }
+                      },
+                      [
+                        _c("view", { staticClass: ["p"] }, [
+                          _c("u-text", { staticClass: ["text-warning"] }, [
+                            _vm._v("金币区")
+                          ])
+                        ]),
+                        _c(
+                          "view",
+                          {
+                            staticClass: [
+                              "flex-1",
+                              "flex",
+                              "flex-column",
+                              "justify-center"
+                            ]
+                          },
+                          [
+                            _c(
+                              "u-text",
+                              { staticClass: ["text-white", "font"] },
+                              [_vm._v("100")]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _c("f-gift", { ref: "gift" })
               ],
               1
-            )
-          ]),
-          _c(
-            "view",
-            {
-              staticClass: [
-                "flex",
-                "align-center",
-                "justify-between",
-                "fixed-bottom"
-              ],
-              staticStyle: { height: "120rpx" }
-            },
-            [
+            ),
+            _c("f-danmu", { ref: "danmu" }),
+            _c("uni-popup", { ref: "input", attrs: { type: "bottom" } }, [
               _c(
                 "view",
-                { staticClass: ["px-2"], on: { click: _vm.openInput } },
+                {
+                  staticClass: ["bg-white", "flex", "align-center", "px-3"],
+                  staticStyle: { height: "120rpx" }
+                },
                 [
-                  _c("view", { staticClass: ["btn", "px-3"] }, [
-                    _c("u-text", { staticClass: ["text-white", "font"] }, [
-                      _vm._v("说点什么...")
+                  _c("u-input", {
+                    staticClass: [
+                      "border",
+                      "rounded",
+                      "flex-1",
+                      "px-3",
+                      "font-md"
+                    ],
+                    staticStyle: { height: "80rpx" },
+                    attrs: {
+                      type: "text",
+                      placeholder: "说点什么吧...",
+                      value: _vm.content
+                    },
+                    on: {
+                      input: function($event) {
+                        _vm.content = $event.detail.value
+                      }
+                    }
+                  }),
+                  _c(
+                    "view",
+                    {
+                      staticClass: [
+                        "flex",
+                        "align-center",
+                        "justify-center",
+                        "py-2",
+                        "px-2",
+                        "ml-3",
+                        "rounded"
+                      ],
+                      class:
+                        _vm.content === "" ? "bg-main-disabled" : "bg-main",
+                      on: { click: _vm.sumbit }
+                    },
+                    [
+                      _c("u-text", { staticClass: ["font", "text-white"] }, [
+                        _vm._v("发送")
+                      ])
+                    ]
+                  )
+                ],
+                1
+              )
+            ]),
+            _c(
+              "view",
+              {
+                staticClass: [
+                  "flex",
+                  "align-center",
+                  "justify-between",
+                  "fixed-bottom"
+                ],
+                staticStyle: { height: "120rpx" }
+              },
+              [
+                _c(
+                  "view",
+                  { staticClass: ["px-2"], on: { click: _vm.openInput } },
+                  [
+                    _c("view", { staticClass: ["btn", "px-3"] }, [
+                      _c("u-text", { staticClass: ["text-white", "font"] }, [
+                        _vm._v("说点什么...")
+                      ])
+                    ])
+                  ]
+                ),
+                _c("view", { staticClass: ["flex", "align-center"] }, [
+                  _c("view", { staticClass: ["btn", "btn-icon"] }, [
+                    _c(
+                      "u-text",
+                      {
+                        staticClass: ["iconfont", "text-white"],
+                        staticStyle: { fontSize: "40px" }
+                      },
+                      [_vm._v("")]
+                    )
+                  ]),
+                  _c(
+                    "view",
+                    { staticClass: ["btn", "btn-icon", "bg-warning"] },
+                    [_c("u-text", { staticClass: ["iconfont"] }, [_vm._v("")])]
+                  ),
+                  _c("view", { staticClass: ["btn", "btn-icon"] }, [
+                    _c("u-text", { staticClass: ["iconfont", "text-white"] }, [
+                      _vm._v("")
+                    ])
+                  ]),
+                  _c("view", { staticClass: ["btn", "btn-icon"] }, [
+                    _c("u-text", { staticClass: ["iconfont", "text-white"] }, [
+                      _vm._v("")
                     ])
                   ])
-                ]
-              ),
-              _c("view", { staticClass: ["flex", "align-center"] }, [
-                _c("view", { staticClass: ["btn", "btn-icon"] }, [
-                  _c(
-                    "u-text",
-                    {
-                      staticClass: ["iconfont", "text-white"],
-                      staticStyle: { fontSize: "40px" }
-                    },
-                    [_vm._v("")]
-                  )
-                ]),
-                _c("view", { staticClass: ["btn", "btn-icon", "bg-warning"] }, [
-                  _c("u-text", { staticClass: ["iconfont"] }, [_vm._v("")])
-                ]),
-                _c("view", { staticClass: ["btn", "btn-icon"] }, [
-                  _c("u-text", { staticClass: ["iconfont", "text-white"] }, [
-                    _vm._v("")
-                  ])
-                ]),
-                _c("view", { staticClass: ["btn", "btn-icon"] }, [
-                  _c("u-text", { staticClass: ["iconfont", "text-white"] }, [
-                    _vm._v("")
-                  ])
                 ])
-              ])
-            ]
-          )
-        ],
-        1
-      )
+              ]
+            )
+          ],
+          1
+        )
+      ])
     ]
   )
 }
@@ -1458,7 +1463,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Pro
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\nvar _fGift = _interopRequireDefault(__webpack_require__(/*! @/components/live/f-gift.vue */ 9));\n\nvar _fDanmu = _interopRequireDefault(__webpack_require__(/*! @/components/live/f-danmu.vue */ 15));\n\nvar _uniPopup = _interopRequireDefault(__webpack_require__(/*! @/components/uni-ui/uni-popup/uni-popup.vue */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =\n\n{\n\n  components: {\n\n    fGift: _fGift.default,\n\n    fDanmu: _fDanmu.default,\n\n    uniPopup: _uniPopup.default },\n\n\n\n  mounted: function mounted() {var _this = this;\n\n    // 送礼物演示\n\n    setInterval(function () {\n\n      _this.$refs.gift.send({\n\n        username: '发送人',\n\n        avatar: '',\n\n        gift_name: '蛋糕',\n\n        gift_image: '/static/gift/3.png',\n\n        num: 1 });\n\n\n\n    }, 3000);\n\n  },\n\n  data: function data() {\n\n    return {\n\n      statusBarHeight: 0,\n\n      content: '' };\n\n\n\n  },\n\n  onLoad: function onLoad() {\n\n    var res = uni.getSystemInfoSync();\n\n    this.statusBarHeight = res.statusBarHeight;\n\n  },\n\n  methods: {\n\n    //打开输入弹幕的对话框\n\n    openInput: function openInput() {\n\n      this.$refs.input.open();\n\n    },\n\n    //提交发送弹幕信息\n\n    sumbit: function sumbit() {\n\n      if (this.content === '') {\n\n        return;\n\n      }\n\n      this.$refs.danmu.send({\n\n        id: Math.random() * 100, //随机生成一个id\n\n        name: '撒野',\n\n        content: this.content });\n\n\n\n      this.content = '';\n\n      this.$refs.input.close();\n\n    },\n\n    //返回上一层页面\n\n    back: function back() {\n\n      uni.navigateBack({\n\n        delta: 1 });\n\n\n\n    } } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiI4LmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///8\n");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });exports.default = void 0;\n\n\nvar _fGift = _interopRequireDefault(__webpack_require__(/*! @/components/live/f-gift.vue */ 9));\n\nvar _fDanmu = _interopRequireDefault(__webpack_require__(/*! @/components/live/f-danmu.vue */ 15));\n\nvar _uniPopup = _interopRequireDefault(__webpack_require__(/*! @/components/uni-ui/uni-popup/uni-popup.vue */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //\nvar _default =\n{\n\n  components: {\n\n    fGift: _fGift.default,\n\n    fDanmu: _fDanmu.default,\n\n    uniPopup: _uniPopup.default },\n\n\n\n  mounted: function mounted() {var _this = this;\n\n    // 送礼物演示\n\n    setInterval(function () {\n\n      _this.$refs.gift.send({\n\n        username: '发送人',\n\n        avatar: '',\n\n        gift_name: '蛋糕',\n\n        gift_image: '/static/gift/3.png',\n\n        num: 1 });\n\n\n\n    }, 3000);\n\n  },\n\n  data: function data() {\n\n    return {\n\n      statusBarHeight: 0,\n\n      content: '' };\n\n\n\n  },\n\n  onLoad: function onLoad() {\n\n    var res = uni.getSystemInfoSync();\n\n    this.statusBarHeight = res.statusBarHeight;\n\n  },\n\n  methods: {\n\n    //打开输入弹幕的对话框\n\n    openInput: function openInput() {\n\n      this.$refs.input.open();\n\n    },\n\n    //提交发送弹幕信息\n\n    sumbit: function sumbit() {\n\n      if (this.content === '') {\n\n        return;\n\n      }\n\n      this.$refs.danmu.send({\n\n        id: Math.random() * 100, //随机生成一个id\n\n        name: '撒野',\n\n        content: this.content });\n\n\n\n      this.content = '';\n\n      this.$refs.input.close();\n\n    },\n\n    //返回上一层页面\n\n    back: function back() {\n\n      uni.navigateBack({\n\n        delta: 1 });\n\n\n\n    } } };exports.default = _default;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiI4LmpzIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///8\n");
 
 /***/ }),
 /* 9 */
