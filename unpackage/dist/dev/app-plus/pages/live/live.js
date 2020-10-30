@@ -1120,7 +1120,7 @@ var render = function() {
         { staticClass: ["flex-1"] },
         [
           _c("u-video", {
-            staticClass: ["flex-1", "mt-3"],
+            staticClass: ["flex-1"],
             attrs: {
               src: "http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8",
               autoplay: true,
