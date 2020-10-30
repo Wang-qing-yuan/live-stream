@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<image src="../../static/banner/3.jpg" style="width: 750rpx; height: 250rpx;"></image>
+		<image src="../../static/banner/1.jpg" style="width: 750rpx; height: 250rpx;"></image>
 		<!-- 轮播图 -->
 		<!-- <swiper
 			:indicator-dots="true"
@@ -42,56 +42,56 @@ export default {
 		return {
 			list: [
 				{
-					name: '小圆圆',
-					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/campus/短发46.jpg',
+					name: '宠物时光',
+					img: '../../static/list/list-1.jpg',
 					money: 100,
 					popular: 10,
 					status: 0
 				},
 				{
-					name: '果小果',
-					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/campus/短发47.jpg',
+					name: '文艺学习',
+					img: '../../static/list/list-2.jpg',
 					money: 30,
 					popular: 8,
 					status: 1
 				},
 				{
-					name: '静静',
-					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/campus/短发19.jpeg',
+					name: '书',
+					img: '../../static/list/list-3.jpg',
 					money: 50,
 					popular: 1,
 					status: 0
 				},
 				{
-					name: '肉肉',
-					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/campus/短发18.jpeg',
+					name: '向日葵',
+					img: '../../static/list/list-4.jpg',
 					money: 60,
 					popular: 1,
 					status: 0
 				},
 				{
-					name: '呆妹',
-					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/campus/短发39.jpg',
+					name: '冲浪',
+					img: '../../static/list/list-5.jpg',
 					money: 70,
 					popular: 1,
 					status: 1
 				},
 				{
-					name: '小天才',
-					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/avatar/20200420202237.png',
+					name: '贪吃黑狗',
+					img: '../../static/list/list-6.jpg',
 					money: 10,
 					popular: 292,
 					status: 1
 				},
 				{
-					name: '啦啦啦啦',
+					name: '海边',
 					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/avatar/20200420202118.png',
 					money: 90,
 					popular: 192,
 					status: 1
 				},
 				{
-					name: '撒野',
+					name: '来玩吖',
 					img: 'https://kkkksslls.oss-cn-beijing.aliyuncs.com/avatar/20200420202138.png',
 					money: 20,
 					popular: 90,
