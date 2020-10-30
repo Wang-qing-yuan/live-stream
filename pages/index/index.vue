@@ -63,7 +63,7 @@ export default {
           status: 0
         },
         {
-          name: '我在南京学摄影',
+          name: '学摄影',
           img: '../../static/list-4.jpg',
           money: 60,
           popular: 1,
