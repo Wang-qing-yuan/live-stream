@@ -92,7 +92,7 @@
 					@click="sumbit"
 					:class="content === '' ? 'bg-main-disabled' : 'bg-main'"
 				>
-					<text class="font text-white">bububu发送</text>
+					<text class="font text-white">发送</text>
 				</view>
 			</view>
 		</uni-popup>
@@ -100,7 +100,7 @@
 		<!-- 底部 -->
 		<view style="height: 120rpx;" class="flex align-center justify-between fixed-bottom">
 			<view class="px-2" @click="openInput">
-				<view class="btn px-3"><text class="text-white font">说点什么...</text></view>
+				<view class="btn px-3"><text class="text-white font">说点什么..vvvvvvvvvvvvv.</text></view>
 			</view>
 			<view class="flex align-center">
 				<view class="btn btn-icon">
