@@ -92,7 +92,7 @@
 					@click="sumbit"
 					:class="content === '' ? 'bg-main-disabled' : 'bg-main'"
 				>
-					<text class="font text-white">发送</text>
+					<text class="font text-white">bububu发送</text>
 				</view>
 			</view>
 		</uni-popup>
