@@ -15,7 +15,7 @@ export default new Vuex.Store({
 		authMethod({
 			state
 		}, callback) {
-			if (@state.token) {
+			if (!state.token) {
 				uni.showToast({
 					title:'请先登录',
 					icon:'none'

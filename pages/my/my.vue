@@ -8,8 +8,6 @@
 				<view style="position: absolute;top: 90rpx;right: 20rpx;" @click="settings">
 					<image src="../../static/setting/settings.png" style="width: 70rpx;height: 70rpx;"></image>
 				</view>
-				
-				
 			</view>
 			<view class="flex flex-column">
 				<text class="font-md">未登录</text>
@@ -83,6 +81,11 @@ export default {
 		this.$store.dispatch('getUserInfo');
 	},
 	methods: {
+		settings() {
+			this.authJump({
+				url: '../user-set/user-set'
+			});
+		},
 		openLogin() {
 			uni.navigateTo({
 				url: '../login/login'
@@ -99,11 +102,6 @@ export default {
 	onLoad() {
 		let res = uni.getSystemInfoSync();
 		this.statusBarHeight = res.statusBarHeight;
-	},
-	settings() {
-		this.authJump({
-			url:'../user-set/user-set'
-		});
 	}
 };
 </script>
