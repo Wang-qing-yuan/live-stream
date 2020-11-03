@@ -15,7 +15,7 @@
 				v-for="(item, index) in list"
 				:key="index"
 			>
-				<text class="font-md text-danger">{{ item.name }}:</text>
+				<text class="font-md text-main">{{ item.name }}:</text>
 				<text class="font-md text-white">{{ item.content }}</text>
 			</view>
 		</scroll-view>

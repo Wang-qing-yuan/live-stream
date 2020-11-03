@@ -8,7 +8,7 @@
 	</view> -->
 
 	<view class="flex-1">
-		<video src="http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8" autoplay controls="false" class="flex-1"></video>
+		<video src="rtmp://101.200.130.236:1935/live/exp" autoplay controls="false" class="flex-1"></video>
 
 		<!-- 头部 -->
 		<view style="position: fixed; left: 0; right: 0;" :style="'top:' + statusBarHeight + 'px'">
@@ -30,7 +30,7 @@
 
 					<view class="p">
 						<view
-							class="rounded-circle flex align-center justify-center bg-danger"
+							class="rounded-circle flex align-center justify-center bg-main"
 							style="width: 70rpx;height: 70rpx;"
 						>
 							<text class="text-white">+</text>
@@ -46,7 +46,7 @@
 					</scroll-view>
 					<view class="p">
 						<view
-							class="rounded-circle flex align-center justify-center bg-danger"
+							class="rounded-circle flex align-center justify-center bg-main"
 							style="width: 70rpx; height: 70rpx;"
 						>
 							<text class="text-white font-sm">1000</text>
@@ -108,7 +108,7 @@
 				</view>
 				<view class="btn btn-icon bg-main" @click="openGift"><text class="iconfont">&#xe67c;</text></view>
 				<view class="btn btn-icon"><text class="iconfont text-white">&#xe7cd;</text></view>
-				<view class="btn btn-icon"><text class="iconfont text-white">&#xe607;</text></view>
+				<view @click="back" class="btn btn-icon"><text class="iconfont text-white">&#xe607;</text></view>
 			</view>
 		</view>
 
@@ -230,7 +230,10 @@ export default {
 		},
 		//打开输入弹幕的对话框
 		openInput() {
-			this.$refs.input.open();
+			// this.$refs.input.open();
+			this.$store.dispatch('authMethod',() => {
+				this.$refs.input.open();
+			});
 		},
 		//提交发送弹幕信息
 		sumbit() {

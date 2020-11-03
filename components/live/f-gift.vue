@@ -9,7 +9,7 @@
 			:ref="'item' + index"
 		>
 			<view
-				style="width: 325rpx;background-image: linear-gradient(to right,#BCABB1,#65AAF0);"
+				style="width: 325rpx;background-image: linear-gradient(to right,#BCABB1,#8745FF);"
 				class="flex rounded-circle"
 			>
 				<view class="p">
