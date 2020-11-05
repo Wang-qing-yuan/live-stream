@@ -3200,7 +3200,7 @@ var render = function() {
           _c(
             "v-uni-text",
             { staticClass: _vm._$g(35, "sc"), attrs: { _i: 35 } },
-            [_vm._v("注册及代表您同意")]
+            [_vm._v("注册及代ddddddddd表您同意")]
           ),
           _c(
             "v-uni-text",
